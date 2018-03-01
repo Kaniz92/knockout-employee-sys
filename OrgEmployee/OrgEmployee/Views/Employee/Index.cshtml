@@ -1,0 +1,46 @@
+﻿@model IEnumerable<OrgEmployee.Models.Employee>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="k-content row home-wallpaper">
+   <br/>
+    <h2>Employee Details</h2>
+    <br/>
+</div>
+<div class="k-content row center">
+    <p>
+        <button data-bind="kendoButton: CreateNew">Create New</button>
+    <table>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JoiningDate)
+            </th>
+            <th></th>
+        </tr>
+
+        <tbody data-bind="foreach: Employees">
+            <tr>
+                <td data-bind="text: LastName"></td>
+                <td data-bind="text: FirstName"></td>
+                <td data-bind="text: JoiningDate"></td>
+                <td>
+                    <a data-bind="click: EditEmployee"></a>
+                    <a data-bind="click: DeleteEmployee"></a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    @Html.ActionLink("Back to Home", "Index", "Home")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/Scripts/ViewModels/Employee/IndexVM.js")
+}

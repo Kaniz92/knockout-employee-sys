@@ -1,0 +1,52 @@
+﻿@model OrgEmployee.Models.Employee
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@*@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)*@
+
+    <fieldset>
+        <legend>Employee</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LastName)
+        </div>
+        <div class="editor-field">
+            @*@Html.EditorFor(model => model.LastName)
+            @Html.ValidationMessageFor(model => model.LastName)*@
+            <input data-bind="kendoMaskedTextBox: LastName" />
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FirstName)
+        </div>
+        <div class="editor-field">
+            <input data-bind="kendoMaskedTextBox: FirstName" />
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.JoiningDate)
+        </div>
+        <div class="editor-field">
+            <input data-bind="kendoDatePicker: JoiningDate" />
+        </div>
+
+        <p>
+            <button type="button" data-bind="kendoButton: SaveEmployee">Create</button>
+        </p>
+    </fieldset>
+@*}*@
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/ViewModels/Employee/CreateVM.js")
+}

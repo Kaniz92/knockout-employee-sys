@@ -1,0 +1,9 @@
+C:\Users\Gayat\Documents\KT\OrganizationEmployeeData\OrganizationEmployeeData\bin\Debug\OrganizationEmployeeData.dacpac
+C:\Users\Gayat\Documents\KT\OrganizationEmployeeData\OrganizationEmployeeData\bin\Debug\OrganizationEmployeeData.dll
+C:\Users\Gayat\Documents\KT\OrganizationEmployeeData\OrganizationEmployeeData\bin\Debug\OrganizationEmployeeData.pdb
+C:\Users\Gayat\Documents\KT\OrganizationEmployeeData\OrganizationEmployeeData\obj\Debug\Model.xml
+C:\Users\Gayat\Documents\KT\OrganizationEmployeeData\OrganizationEmployeeData\obj\Debug\refactor.xml
+C:\Users\Gayat\Documents\KT\OrganizationEmployeeData\OrganizationEmployeeData\obj\Debug\postdeploy.sql
+C:\Users\Gayat\Documents\KT\OrganizationEmployeeData\OrganizationEmployeeData\obj\Debug\predeploy.sql
+C:\Users\Gayat\Documents\KT\OrganizationEmployeeData\OrganizationEmployeeData\obj\Debug\OrganizationEmployeeData.dll
+C:\Users\Gayat\Documents\KT\OrganizationEmployeeData\OrganizationEmployeeData\obj\Debug\OrganizationEmployeeData.pdb

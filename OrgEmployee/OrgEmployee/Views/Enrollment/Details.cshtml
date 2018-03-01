@@ -1,0 +1,36 @@
+﻿@model OrgEmployee.Models.Enrollment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Enrollment</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Band)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Band)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Department.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Department.Title)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee.LastName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee.LastName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.EnrollmentID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

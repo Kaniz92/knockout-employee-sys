@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<div class="k-content row home-wallpaper">
+    <br/>
+    <h2>Employee Management Portal</h2>
+    <br/>
+    <div class="tile tile-left">
+        <button class="k-button" data-bind="kendoButton: viewEmployeeList">Employee </button>
+    </div>
+    <div class="tile tile-right">
+        <button class="k-button" data-bind="kendoButton: viewEnrollmentList">Enrollments</button>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/Scripts/ViewModels/Home/IndexVM.js")
+}
